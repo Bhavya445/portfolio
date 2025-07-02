@@ -1,103 +1,27 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <section className="px-6 py-10 flex flex-col items-center text-center space-y-6 min-h-screen">
+      <img
+        src="/me.jpeg"
+        alt="Bhavya"
+        className="w-48 h-48 rounded-xl shadow-lg border border-[#ccc] object-cover"
+      />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* Glassmorphic card with blue-greyish border */}
+      <div className="relative max-w-3xl rounded-2xl border-2 border-slate-400 bg-white/30 backdrop-blur-xl shadow-xl">
+        <div className="rounded-[14px] px-6 py-6 leading-relaxed">
+          <p className="text-lg text-[#444]">
+            <span className="text-2xl font-semibold">Hey there,</span><br /><br />
+            First off, thank you for opening this and taking the time to get to know me.
+            So yeah, I’m just another human thriving on this planet—curious, a little restless, and always questioning everything. I like to find the why behind things, and I’m constantly exploring the many ways technology can improve our lives.
+            I’ve dabbled in Web Development, App Development, AI, Machine Learning, Cryptography, Quantum Computing, Material modeling and simulation, UI/UX design—you name it. I enjoy experimenting across domains and finding connections between them.
+            I love challenging myself—the adrenaline rush of pushing limits genuinely makes me happy. That’s probably why I enjoy taking part in hackathons so much. There’s something incredibly fun about teaming up with others to brainstorm solutions, build prototypes from scratch, and bring ideas to life under pressure.
+            When I’m not playing around with tech, I’m probably reading about the universe (especially how it all began—yes, I’m a Big Bang theory nerd), staring at the stars, or getting lost in novels. I also enjoy photography, writing occasionally, and running around—literally. I also love playing badminton.<br /><br />
+            My ultimate goal? To travel the world—maybe even space if I’m lucky—and leave this place a little better than I found it.<br /><br />
+            Feel free to reach out—whether it’s for a tech chat, a hackathon, a book recommendation, or just to share cool sky photos.
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </div>
+    </section>
   );
 }

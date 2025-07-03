@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import {
   SiPython, SiJavascript, SiTypescript, SiCplusplus, SiHtml5, SiCss3, SiQiskit,
   SiReact, SiNextdotjs, SiTailwindcss, SiFlutter, SiFirebase, SiTensorflow, SiScikitlearn, SiPandas, SiNumpy,
@@ -8,7 +8,6 @@ import {
   SiFigma, SiCanva, SiKeras, SiDjango, SiFlask, SiGithub, SiNodedotjs
 } from 'react-icons/si';
 import { FaCamera, FaPenNib, FaSwimmer, FaTableTennis, FaPalette, FaDatabase, FaJava } from 'react-icons/fa';
-
 
 const sections = [
   {
@@ -91,7 +90,8 @@ const sections = [
   },
 ];
 
-const containerVariants = {
+// Explicitly type all variants for Framer Motion v7+ compatibility
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -102,7 +102,7 @@ const containerVariants = {
   },
 };
 
-const cardVariants = {
+const cardVariants: Variants = {
   hidden: {
     opacity: 0,
     y: 60,
@@ -123,7 +123,7 @@ const cardVariants = {
   },
 };
 
-const skillVariants = {
+const skillVariants: Variants = {
   hidden: { opacity: 0, scale: 0.8, y: 20 },
   visible: {
     opacity: 1,
@@ -137,7 +137,7 @@ const skillVariants = {
   },
 };
 
-const skillContainerVariants = {
+const skillContainerVariants: Variants = {
   visible: {
     transition: {
       staggerChildren: 0.08,
@@ -228,4 +228,3 @@ export default function SkillsPage() {
     </main>
   );
 }
-

@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import {
   FaUniversity,
   FaBookReader,
@@ -71,7 +71,8 @@ const journey = [
   },
 ];
 
-const containerVariants = {
+// Explicitly type all variants for Framer Motion v7+ compatibility
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -79,7 +80,7 @@ const containerVariants = {
   },
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { opacity: 0, x: -30 },
   visible: {
     opacity: 1,

@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 const projects = [
@@ -76,7 +76,8 @@ const projects = [
   },
 ];
 
-const containerVariants = {
+// Explicitly type all variants for Framer Motion v7+ compatibility
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -84,7 +85,7 @@ const containerVariants = {
   },
 };
 
-const cardVariants = {
+const cardVariants: Variants = {
   hidden: { opacity: 0, y: 40, scale: 0.95 },
   visible: {
     opacity: 1,

@@ -11,7 +11,9 @@
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.3.4"
+    "next": "15.3.4",
+    "framer-motion": "^10.x.x",
+    "react-icons": "^4.x.x"
   },
   "devDependencies": {
     "typescript": "^5",
@@ -24,4 +26,5 @@
     "eslint-config-next": "15.3.4",
     "@eslint/eslintrc": "^3"
   }
+
 }

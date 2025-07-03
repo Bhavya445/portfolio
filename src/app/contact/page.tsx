@@ -13,7 +13,7 @@ export default function Contact() {
       {/* Background Accent Blob */}
       <div className="absolute w-96 h-96 bg-[#E0E8D7] opacity-30 rounded-full blur-3xl -z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
 
-      <p className="text-sm italic mb-[-12px]">Let’s build something meaningful together.</p>
+      <p className="text-sm italic mb-[-12px]"> Together, we can create something valuable.</p>
       <br />
       <h2 className="text-3xl text-slate-600">Feel free to contact me using any of the below</h2>
 
@@ -51,7 +51,7 @@ export default function Contact() {
       {/* CTA Button */}
       <a href="mailto:bhavya4405@gmail.com">
         <button className="mt-6 bg-gradient-to-r from-slate-500 via-slate-600 to-slate-700 text-white px-6 py-2 rounded-lg shadow hover:from-slate-600 hover:via-slate-700 hover:to-slate-800 transition duration-300">
-          Let's Talk
+          Let us Talk
         </button>
       </a>
     </section>

@@ -9,6 +9,7 @@ import {
 } from 'react-icons/si';
 import { FaCamera, FaPenNib, FaSwimmer, FaTableTennis, FaPalette, FaDatabase, FaJava } from 'react-icons/fa';
 
+
 const sections = [
   {
     title: 'Languages',
@@ -42,6 +43,7 @@ const sections = [
       { icon: <SiDjango color="#092E20" />, name: 'Django' },
       { icon: <SiFlask color="#000000" />, name: 'Flask' },
       { icon: <SiNodedotjs color="#339933" />, name: 'Node.js' },
+      { icon: null, name: 'Streamlit' },
     ],
   },
   {
@@ -88,6 +90,7 @@ const sections = [
     ],
   },
 ];
+
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {

@@ -148,7 +148,7 @@ const skillContainerVariants: Variants = {
 
 export default function SkillsPage() {
   return (
-    <main className="min-h-screen py-16 px-4 md:px-12 lg:px-24 text-[#333]">
+    <main className="min-h-screen py-16 px-4 md:px-12 lg:px-24 text-[#333] dark:text-[#e5e7eb]">
       <motion.div
         initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: 1, y: 0 }}
@@ -173,7 +173,7 @@ export default function SkillsPage() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2, duration: 0.6 }}
-          className="mt-6 text-base text-gray-600 font-medium"
+          className="mt-6 text-base text-black font-medium dark:text-gray-300"
         >
           Crafting digital experiences with passion and precision
         </motion.p>
@@ -191,7 +191,7 @@ export default function SkillsPage() {
             variants={cardVariants}
             whileHover={{ y: -12, scale: 1.02, rotateY: 5 }}
             transition={{ duration: 0.4, ease: 'easeOut' }}
-            className="group relative rounded-3xl shadow-xl p-8 backdrop-blur-lg border border-white/60 bg-white/70 overflow-hidden"
+            className="group relative rounded-3xl shadow-xl p-8 backdrop-blur-lg border border-white/60 bg-white/70 dark:bg-white/5 dark:border-white/10 overflow-hidden"
           >
             <div className="absolute top-0 left-4 right-4 h-1 bg-gradient-to-r from-sky-300 via-gray-400 to-sky-500 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left shadow-lg" />
             <div className="absolute left-0 top-8 bottom-8 w-1 bg-gradient-to-b from-sky-300 via-gray-400 to-sky-500 rounded-r-full transform scale-y-0 group-hover:scale-y-100 transition-transform duration-700 origin-top shadow-lg" />
@@ -209,13 +209,16 @@ export default function SkillsPage() {
                   variants={skillVariants}
                   whileHover={{ scale: 1.08, y: -4, rotate: 2 }}
                   whileTap={{ scale: 0.95 }}
-                  className="group/skill relative flex items-center gap-2 px-4 py-2 rounded-xl border border-pink-200 shadow-md bg-white/90 hover:bg-pink-50 transition-all overflow-hidden"
+                  className="group/skill relative flex items-center gap-2 px-4 py-2 rounded-xl border border-pink-200 shadow-md bg-white/90 hover:bg-pink-50 dark:bg-white/10 dark:hover:bg-white/15 transition-all overflow-hidden"
                 >
                   <div className="relative flex-shrink-0 group-hover/skill:scale-110 transition-transform duration-300">
                     {skill.icon}
                     <div className="absolute inset-0 rounded-full bg-current opacity-0 group-hover/skill:opacity-20 blur-md transition-opacity duration-300" />
                   </div>
-                  <span className="text-sm font-semibold text-gray-700 group-hover/skill:text-gray-900 transition-colors duration-300">
+                  <span
+                    className="text-sm font-semibold dark:text-gray-200 dark:group-hover/skill:text-gray-50 transition-colors duration-300"
+                    style={{ color: '#1f1f1f' }}
+                  >
                     {skill.name}
                   </span>
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover/skill:translate-x-full transition-transform duration-700 ease-out" />

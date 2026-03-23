@@ -62,7 +62,7 @@ const cardVariants: Variants = {
 
 export default function AchievementsPage() {
   return (
-    <main className="min-h-screen py-16 px-4 md:px-12 lg:px-24 text-[#333]">
+    <main className="min-h-screen py-16 px-4 md:px-12 lg:px-24 text-[#333] dark:text-[#e5e7eb]">
       {/* HEADER */}
       <motion.div
         initial={{ opacity: 0, y: -40 }}
@@ -85,7 +85,7 @@ export default function AchievementsPage() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2 }}
-          className="mt-6 text-base text-gray-600 font-medium"
+          className="mt-6 text-base text-black font-medium dark:text-gray-300"
         >
           A glimpse into moments that made the hustle worth it.
         </motion.p>
@@ -103,7 +103,7 @@ export default function AchievementsPage() {
             key={index}
             variants={cardVariants}
             whileHover={{ y: -6, scale: 1.01 }}
-            className="group flex items-start gap-5 rounded-3xl shadow-xl p-6 backdrop-blur-xl border border-white/50 bg-white/60 hover:bg-white/70 transition-all relative"
+            className="group flex items-start gap-5 rounded-3xl shadow-xl p-6 backdrop-blur-xl border border-white/50 bg-white/60 hover:bg-white/70 dark:bg-white/5 dark:border-white/10 dark:hover:bg-white/10 transition-all relative"
           >
             {/* Hover gradient: top */}
             <div className="absolute top-0 left-4 right-4 h-1 bg-gradient-to-r from-sky-300 via-gray-400 to-sky-500 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left shadow-lg" />
@@ -119,7 +119,7 @@ export default function AchievementsPage() {
               <h2 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sky-500 via-gray-600 to-sky-600">
                 {item.title}
               </h2>
-              <p className="text-sm text-gray-700">{item.description}</p>
+              <p className="text-sm text-black dark:text-gray-300">{item.description}</p>
             </div>
           </motion.div>
         ))}
@@ -137,7 +137,7 @@ export default function AchievementsPage() {
             key={idx}
             variants={cardVariants}
             whileHover={{ y: -6, scale: 1.01 }}
-            className="group flex items-start gap-4 rounded-3xl shadow-xl p-6 backdrop-blur-xl border border-white/50 bg-white/60 hover:bg-white/70 transition-all relative"
+            className="group flex items-start gap-4 rounded-3xl shadow-xl p-6 backdrop-blur-xl border border-white/50 bg-white/60 hover:bg-white/70 dark:bg-white/5 dark:border-white/10 dark:hover:bg-white/10 transition-all relative"
           >
             {/* Hover gradient: top */}
             <div className="absolute top-0 left-4 right-4 h-1 bg-gradient-to-r from-sky-300 via-gray-400 to-sky-500 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left shadow-lg" />
@@ -159,7 +159,7 @@ export default function AchievementsPage() {
                 href={cert.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-blue-600 hover:underline"
+                className="text-sm text-blue-600 hover:underline dark:text-sky-300 dark:hover:underline"
               >
                 View Credential
               </a>

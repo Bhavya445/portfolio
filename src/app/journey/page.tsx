@@ -14,6 +14,13 @@ import {
 
 const journey = [
   {
+    year: 'Dec 2025',
+    title: 'Intern – Quantum AI Global',
+    description:
+      'Worked on visualizing quantum algorithms on the frontend—turning quantum concepts into clear, interactive UI experiences.',
+    icon: <FaMicroscope className="text-indigo-600 text-xl" />,
+  },
+  {
     year: 'July 2025',
     title: 'Qiskit Global Summer School & SheFi Scholar',
     description:
@@ -91,7 +98,7 @@ const itemVariants: Variants = {
 
 export default function JourneyPage() {
   return (
-    <main className="min-h-screen py-16 px-4 md:px-12 lg:px-24 text-[#333]">
+    <main className="min-h-screen py-16 px-4 md:px-12 lg:px-24 text-[#333] dark:text-[#e5e7eb]">
       {/* Header */}
       <motion.div
         initial={{ opacity: 0, y: -40 }}
@@ -114,7 +121,7 @@ export default function JourneyPage() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2 }}
-          className="mt-6 text-base text-gray-600 font-medium"
+          className="mt-6 text-base text-black font-medium dark:text-gray-300"
         >
           Tracing the steps that shaped my tech journey.
         </motion.p>
@@ -148,7 +155,7 @@ export default function JourneyPage() {
               <h4 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sky-500 via-gray-600 to-sky-600 mb-1">
                 {step.title}
               </h4>
-              <p className="text-sm text-gray-700">{step.description}</p>
+              <p className="text-sm text-black dark:text-gray-300">{step.description}</p>
             </div>
           </motion.div>
         ))}

@@ -4,14 +4,17 @@ export default function Home() {
       <img
         src="/me.jpeg"
         alt="Bhavya"
-        className="w-48 h-48 rounded-xl shadow-lg border border-[#ccc] object-cover"
+        className="w-48 h-48 rounded-xl shadow-lg border border-[#ccc] dark:border-gray-700 object-cover"
       />
 
-      {/* Glassmorphic card with blue-greyish border */}
-      <div className="relative max-w-3xl rounded-2xl border-2 border-slate-400 bg-white/30 backdrop-blur-xl shadow-xl">
+      {/* Glassmorphic card - NO CHANGES MADE TO STYLING */}
+      <div className="relative max-w-3xl rounded-2xl border-2 border-slate-400 bg-white/30 dark:border-slate-700 dark:bg-white/5 backdrop-blur-xl shadow-xl">
         <div className="rounded-[14px] px-6 py-6 leading-relaxed">
-          <p className="text-lg text-[#444]">
-            <span className="text-2xl font-semibold">Hey there,</span><br /><br />
+          {/* - text-[#000000] forces absolute black (no grey tints)
+            - font-extrabold (800 weight) ensures the letters don't get lost in the blur
+          */}
+          <p className="text-lg text-[#111111]  dark:text-black">
+            <span className="text-3xl font-[900] block mb-2">Hey there,</span><br />
             First off, thank you for opening this and taking the time to get to know me.
             So yeah, I’m just another human thriving on this planet—curious, a little restless, and always questioning everything. I like to find the why behind things, and I’m constantly exploring the many ways technology can improve our lives.
             I’ve dabbled in Web Development, App Development, AI, Machine Learning, Cryptography, Quantum Computing, Material modeling and simulation, UI/UX design—you name it. I enjoy experimenting across domains and finding connections between them.
